@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050a30">
+  <meta name="description" content="Artigos, análises e opiniões sobre política brasileira, geopolítica e sociedade.">
+  <title>Postagens | Vilela — Política em perspectiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="postagens.css">
+  <script src="script.js" defer></script>
+  <script src="postagens.js" defer></script>
+</head>
+<body class="pagina-postagens">
+  <div class="topline"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Vilela, página inicial">
+        <span class="brand-mark">V.</span><span>VILELA<small>Política em perspectiva</small></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="navlinks" id="navLinks" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="postagens.html" class="nav-active" aria-current="page">Postagens</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a class="contact" href="index.html#contato">Entre em contato ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="posts-hero">
+      <div class="wrap">
+        <div class="eyebrow">Caderno de opinião · Artigos e análises</div>
+        <div class="posts-hero-grid">
+          <div>
+            <h1>Ideias merecem<br><span>ser debatidas.</span></h1>
+            <p>Um espaço para analisar acontecimentos, questionar decisões e discutir os assuntos que influenciam o Brasil e o cenário internacional.</p>
+          </div>
+          <div class="posts-hero-note">
+            <span class="note-symbol">“</span>
+            <p>Não basta acompanhar os acontecimentos. É preciso compreender o que está por trás deles.</p>
+            <span class="note-caption">POLÍTICA EM PERSPECTIVA</span>
+          </div>
+        </div>
+        <div class="posts-meta">
+          <span><i class="status-dot"></i> ARTIGOS E OPINIÕES</span>
+          <span>Uma leitura além das manchetes.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="posts-library">
+      <div class="wrap">
+        <div class="library-heading">
+          <div><div class="eyebrow">Arquivo editorial</div><h2>Explore as publicações.</h2></div>
+          <p id="postsCount" aria-live="polite">6 publicações</p>
+        </div>
+
+        <div class="posts-controls">
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input type="search" id="postSearch" placeholder="Buscar por título, assunto ou palavra-chave..." aria-label="Buscar publicações">
+            <kbd>BUSCAR</kbd>
+          </label>
+          <div class="filter-list" aria-label="Filtrar publicações por categoria">
+            <button class="filter-btn active" type="button" data-filter="todos" aria-pressed="true">Todas</button>
+            <button class="filter-btn" type="button" data-filter="politica" aria-pressed="false">Política nacional</button>
+            <button class="filter-btn" type="button" data-filter="geopolitica" aria-pressed="false">Geopolítica</button>
+            <button class="filter-btn" type="button" data-filter="sociedade" aria-pressed="false">Sociedade</button>
+            <button class="filter-btn" type="button" data-filter="gestao" aria-pressed="false">Gestão pública</button>
+          </div>
+        </div>
+
+        <article class="featured-article reveal" data-category="politica" data-search="democracia instituições política nacional debate público brasil">
+          <a class="featured-image" href="artigo.html?post=democracia" aria-label="Ler artigo sobre democracia e instituições">
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1400&q=85" alt="Arquitetura institucional" loading="lazy">
+            <span class="featured-image-label">EM DESTAQUE</span>
+          </a>
+          <div class="featured-content">
+            <div class="article-meta"><span class="article-category">Política nacional</span><span class="meta-separator">/</span><span>Artigo de opinião</span></div>
+            <h3><a href="artigo.html?post=democracia">Democracia, instituições e a responsabilidade do debate público</a></h3>
+            <p>Uma reflexão sobre o papel das instituições, a qualidade do debate político e a importância de decisões públicas responsáveis.</p>
+            <a class="article-link" href="artigo.html?post=democracia">Ler análise completa <span>↗</span></a>
+          </div>
+        </article>
+
+        <div class="article-grid" id="articleGrid">
+          <article class="article-card reveal" data-category="politica" data-search="congresso nacional representação política democracia parlamentares">
+            <a class="article-image" href="artigo.html?post=congresso"><img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80" alt="Edifício institucional" loading="lazy"><span class="image-number">01</span></a>
+            <div class="article-body"><div class="article-meta"><span class="article-category">Política nacional</span></div><h3><a href="artigo.html?post=congresso">Representação política: a quem os parlamentares devem responder?</a></h3><p>Uma análise sobre representação, interesses públicos e responsabilidade parlamentar.</p><div class="article-footer"><span>Opinião</span><a href="artigo.html?post=congresso" aria-label="Ler artigo">↗</a></div></div>
+          </article>
+          <article class="article-card reveal" data-category="geopolitica" data-search="brasil diplomacia relações internacionais geopolítica soberania">
+            <a class="article-image" href="artigo.html?post=brasil-mundo"><img src="https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?auto=format&fit=crop&w=900&q=80" alt="Globo terrestre" loading="lazy"><span class="image-number">02</span></a>
+            <div class="article-body"><div class="article-meta"><span class="article-category">Geopolítica</span></div><h3><a href="artigo.html?post=brasil-mundo">O Brasil diante das transformações da ordem internacional</a></h3><p>Soberania, diplomacia e os desafios de defender os interesses nacionais.</p><div class="article-footer"><span>Análise</span><a href="artigo.html?post=brasil-mundo" aria-label="Ler artigo">↗</a></div></div>
+          </article>
+          <article class="article-card reveal" data-category="sociedade" data-search="sociedade cidadania participação popular juventude política">
+            <a class="article-image" href="artigo.html?post=participacao"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Pessoas reunidas" loading="lazy"><span class="image-number">03</span></a>
+            <div class="article-body"><div class="article-meta"><span class="article-category">Sociedade</span></div><h3><a href="artigo.html?post=participacao">Participação cidadã: a política começa fora das eleições</a></h3><p>O papel da sociedade na construção de soluções e no acompanhamento do poder público.</p><div class="article-footer"><span>Reflexão</span><a href="artigo.html?post=participacao" aria-label="Ler artigo">↗</a></div></div>
+          </article>
+          <article class="article-card reveal" data-category="gestao" data-search="gestão pública administração planejamento eficiência políticas públicas">
+            <a class="article-image" href="artigo.html?post=gestao"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80" alt="Documentos e planejamento" loading="lazy"><span class="image-number">04</span></a>
+            <div class="article-body"><div class="article-meta"><span class="article-category">Gestão pública</span></div><h3><a href="artigo.html?post=gestao">Planejamento público: boas intenções não bastam</a></h3><p>Por que planejamento, execução e avaliação são essenciais para resultados concretos.</p><div class="article-footer"><span>Análise</span><a href="artigo.html?post=gestao" aria-label="Ler artigo">↗</a></div></div>
+          </article>
+          <article class="article-card reveal" data-category="geopolitica" data-search="recursos naturais indústria brasileira economia soberania mineral tecnologia">
+            <a class="article-image" href="artigo.html?post=recursos"><img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=900&q=80" alt="Instalações industriais" loading="lazy"><span class="image-number">05</span></a>
+            <div class="article-body"><div class="article-meta"><span class="article-category">Geopolítica</span></div><h3><a href="artigo.html?post=recursos">Recursos naturais e desenvolvimento: como agregar valor no Brasil?</a></h3><p>Uma discussão sobre industrialização, tecnologia e aproveitamento econômico.</p><div class="article-footer"><span>Opinião</span><a href="artigo.html?post=recursos" aria-label="Ler artigo">↗</a></div></div>
+          </article>
+        </div>
+
+        <div class="no-results" id="noResults" hidden>
+          <span class="no-results-icon">⌕</span><h3>Nenhuma publicação encontrada.</h3>
+          <p>Tente outra palavra-chave ou selecione uma categoria diferente.</p>
+          <button type="button" class="btn btn-primary" id="clearFilters">Limpar filtros</button>
+        </div>
+        <p class="editorial-note">As publicações exibidas nesta versão são exemplos demonstrativos. Os artigos definitivos serão inseridos conforme o conteúdo editorial do projeto.</p>
+      </div>
+    </section>
+
+    <section class="discussion">
+      <div class="wrap"><div class="discussion-card reveal">
+        <div><span class="eyebrow">O debate continua</span><h2>Uma boa ideia também sabe ouvir.</h2><p>Tem uma pergunta, uma crítica ou uma perspectiva diferente? Entre em contato e participe da conversa.</p></div>
+        <a class="btn btn-primary" href="index.html#contato">Entre em contato <span class="arrow">↗</span></a>
+      </div></div>
+    </section>
+  </main>
+
+  <footer id="contato"><div class="wrap footer-row">
+    <div><a class="brand" href="index.html"><span class="brand-mark">V.</span><span>VILELA<small>Política em perspectiva</small></span></a><div class="footer-copy">© <span id="year"></span> Vilela. Opinião, análise e responsabilidade.</div></div>
+    <div class="socials"><a href="mailto:seuemail@exemplo.com">E-mail ↗</a><a href="index.html#contato">Instagram ↗</a><a href="index.html#contato">LinkedIn ↗</a></div>
+  </div></footer>
+</body>
+</html>
